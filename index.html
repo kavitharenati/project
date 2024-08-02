@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>>, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <style>
+      .iconbox{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+      }
+      .textbox{
+        text-align: center;
+        width: 300px;
+      
+      }
+      .box{
+        display: flex;
+        justify-content: space-between;
+        position:sticky;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.219);
+        color: aliceblue;
+        
+
+      }
+      .title{
+        padding: 24px 5px;
+        font-size: x-large;
+        margin-top: 2px;
+        margin-left: 10%;
+      }
+      .headerbox{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        gap: 50px;
+      }
+      .container{
+        height:100vh;
+        width:100vw;
+        background-image: url(./assets/imges/intro-bg.jpg);
+        background-position: top;
+        background-size: cover;
+        
+      }
+      .maintext{
+        /* position: absolute;
+        top:30%;
+        left:40%; */
+        margin-top: 150px;
+        text-align: center;
+
+
+      }
+      .maintext h1,h2{
+        padding: 10px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        color: aliceblue;
+      }
+      .maintext button{
+        height:50px;
+        width:180px;
+        border:2px solid white;
+        color: aliceblue;
+        background-color: rgba(0, 0, 0, 0.521);
+      }
+      .main{
+        display: flex;
+        justify-content: space-evenly;
+        padding:50px;
+        flex-wrap: wrap;
+
+      }
+      .box1{
+        width:40vw;
+        font-size: 24px;
+        font-family: sans-serif;
+      }
+      .box1image{
+        /* height:300px; */
+        /* width:500px; */
+        display: flex;
+        align-items: center;
+      }
+      .box1image img{
+        /* height:120%; */
+        width:100%;
+      }
+      .text{
+        color: gray;
+      }
+      .text1{
+        color: gray;
+      }
+      .text2{
+        color: gray;
+      }
+      .para{
+        font-size: smaller;
+        color: black;
+      }
+      .mainbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding:50px;
+      }
+      .body{
+        width:400px;
+        font-size: 30px;
+        font-family: sans-serif;
+      }
+      .para1{
+        font-size: smaller;
+        color: black;
+      }
+      .image{
+        height:300px;
+        width:500px;
+      }
+      .image img{
+        height:120%;
+        width:110%;
+      }
+      .para2{
+        font-size: smaller;
+        color: black;
+      }
+      .pic h2{
+        padding:10px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        color: black;
+        text-align: center;
+        
+      }
+      .man{
+        text-align: center;
+        font-size: larger;
+      }
+      .pics{
+        display: flex;
+        flex-wrap: wrap;
+        gap:40px;
+        justify-content:center;
+        height: 75%;
+        width:100%;
+        padding: 30px;
+      }
+      .name{
+        background-color: whitesmoke;
+        padding-bottom: 40px;
+        padding-top: 20px;
+        
+        
+      }
+      .prgm h2 {
+        color: black;
+        display: flex; 
+        margin-left: 11%;
+        
+      }
+      .prgm{
+        padding: 50px;
+        
+      }
+      .value{
+        color: black;
+        display: flex;
+        margin-left: 11%;
+      }
+      
+      .foot{
+        color: gray;
+        text-align: center;
+      }
+      .name{
+        color: black;
+        text-align: center;
+      }
+      .add{
+        color: gray;
+        text-align: center;
+      }
+      .head{
+        background-color: white;
+        padding: 10Px;
+      }
+      .foot{
+        color: black;
+        display: flex;
+        gap:30px;
+        
+      }
+      .line{
+        color: gray;
+        display: flex;
+      }
+      .variable{
+        display: flex;
+        justify-content: start;
+        margin-left: 11%;
+         gap: 50px; 
+        padding-top: 60px;
+        /* margin-right: 14%; */
+        /* text-align: center; */
+      }
+      .day1{
+        color: red;
+      }
+      .build{
+        padding:30px;
+        gap:40px;
+        margin-left: 100px;
+        width:100%;
+        border-radius: 10%; 
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+      .build img{
+        border-radius:50%;
+        height: 80%;
+        width: 80%;
+        
+      }
+      .content{
+        padding: 2px;
+        margin-right: 30px;
+        font-size: x-large;
+        color: gray;
+        width: 70%;
+        
+        
+      
+      }
+      .design{
+        display: flex;
+        flex-wrap: wrap; 
+        width: 100vw;
+      }
+      .com{
+        color: black;
+        
+        
+      }
+      .tap{
+        display: flex;
+        justify-content: space-evenly;
+        background-image: url(./assets/imges/register-bg.jpg);
+        padding: 40px;
+        background-size: cover;
+        background-position: center;
+        flex-wrap: wrap;
+        text-align: center;
+        
+
+      }
+      .tit{
+        text-align: left;
+        font-size: 30px;
+        font-family: sans-serif;
+        color:whitesmoke;
+        flex-wrap: wrap;
+        width: 435px;
+        
+        
+      }
+      .tat{
+        font-size: medium;
+        color:whitesmoke;
+      }
+      .int{
+        font-size: smaller;
+        color:gray;
+        justify-content: right;
+      }
+      .flip{
+        background-image: url(./assets/imges/venue-bg.jpg);
+        width: 100vw;
+        background-position: center;
+        padding: 30px;
+      
+        
+        
+        
+
+      }
+      .flip1{
+        width:350px;
+        font-size: 30px;
+        font-family: sans-serif;
+        justify-content: right;
+        color:black;
+        margin-left:13%;
+      
+        
+        
+      }
+      .flip2{
+        font-size: smaller;
+        color:grey;
+        margin-right: 40px;
+      }
+      .flip3{
+        font-size: smaller;
+        color:black;
+        margin-right: 40px;
+        justify-content: right;
+      }
+      .md{
+
+        margin-right:30%;
+        padding-top: 50px;
+      }
+      
+      
+      input[type]{
+        height:30px;
+        width:300px;
+        background-color: rgba(0, 0, 0, 0.103);
+        border: 2px solid white;
+      }
+      .rem{
+        background-color: red;
+        color: white;
+        border: 2px solid;
+        height: 30px;
+        width:150px;
+        border-radius: 15px;
+        border-color: red;
+        
+      }
+      .rem1{
+        display: flex;
+        width:300px;
+        justify-content: end;
+        margin-top: 20px;
+      }
+      .hang h2{
+        padding:5px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        color: black;
+        text-align: center;
+        
+      }
+      .floor{
+        text-align: center;
+        font-size: larger;
+      }
+      .radio{
+        color: black;
+        text-align: center;
+        padding: 50px;
+      }
+      
+
+      
+      .single{
+       margin-left: 15%;
+       color: black;
+       background-color: whitesmoke;
+       align-items: center;
+       display: flex;
+       justify-content: left;
+       width: 80%;
+       
+       
+
+      }
+      .double{
+       margin-left: 15%;
+       color: gray;
+       background-color: white;
+       align-items: center;
+       display: flex;
+       justify-content: left;
+       font-size: larger;
+       width: 80%;
+
+
+      }
+      .triple{
+       margin-left: 15%;
+       color: black;
+       background-color: whitesmoke;
+       align-items: center;
+       display: flex;
+       justify-content: left;
+       width:80%;
+       
+      }
+       .twice{
+       margin-left: 15%;
+       color: black;
+       background-color: whitesmoke;
+       align-items: center;
+       display: flex;
+       justify-content: left;
+       width:80%;
+       height: 60px;
+       }
+      
+      .dm{
+        color: white;
+        background-color: white;
+        height:5px;
+      }
+      .cm{
+        color: white;
+        background-color:white;
+        height:5px;
+        width: 80%;
+
+      }
+
+      @media screen and (max-width:1020px) {
+        .headerbox{
+          display: none;
+
+        }
+        .content{
+          width:100vw;
+          
+        }
+        
+      }
+      
+      
+      
+       
+      
+      
+      </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="box">
+      <div class="title">NEW EVENT</div>
+      <div class="headerbox">
+          <div>INTRO</div>
+          <div>OVERVIEW</div>
+          <div>SPEAKERS</div>
+          <div>PROGRAMS</div>
+          <div>REGISTER</div>
+          <div>VENUE</div>
+          <div>SPONSORS</div>
+          <div>CONTACT</div>
+          </div>
+          </div>
+          <div class="maintext">
+            <h2>July 22 - 26 in San Francisco, CA</h2>
+            <h1>Web Design Conference</h1>
+            <button>LEARN MORE</button>
+            <button class="btn" style= "background-color:red">REGISTER HERE</button>
+          </div>
+          </div>
+          <div class="main">
+            <div class="box1">
+          <h3>New Event is a fully responsive one-page  template for events, conferences or workshop.</h3>
+          <div class="para">
+          <p>This is a Boostrap v3.3.6 layout that is responsive and mobile friendly. you may download and modify this template for your website. Please tell your friends about templatemo</p>
+          <p>Quisque facilisis scelerisque venenatis.Nam vulputate ultricies luctus. Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed diam nonummy nibhe ismod tincidunt ut laoreet</p>
+            </div> 
+            </div>         
+            <div class="box1image">
+            <img src="./assets/imges/overview-img.jpg" height="300px" width="370px">
+            </div>
+            </div>
+            <div class="iconbox">
+            <div class="textbox">
+            <svg fill="#f50505" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310.75 310.75" xml:space="preserve" stroke="#f50505" stroke-width="0.0031074500000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_341_"> <path id="XMLID_348_" d="M77.622,120.372c9.942,0,19.137-3.247,26.593-8.728c11.382,16.007,30.063,26.479,51.157,26.479 c21.093,0,39.774-10.472,51.157-26.479c7.456,5.481,16.651,8.728,26.593,8.728c24.813,0,45-20.187,45-44.999 c0-24.814-20.187-45.001-45-45.001c-9.943,0-19.138,3.248-26.594,8.729c-11.383-16.006-30.063-26.478-51.156-26.478 c-21.093,0-39.773,10.472-51.156,26.478c-7.456-5.481-16.651-8.729-26.594-8.729c-24.813,0-45,20.187-45,45.001 C32.622,100.186,52.809,120.372,77.622,120.372z M233.122,60.372c8.271,0,15,6.73,15,15.001c0,8.271-6.729,14.999-15,14.999 c-8.271,0-15-6.729-15-14.999C218.122,67.102,224.851,60.372,233.122,60.372z M155.372,42.623c18.059,0,32.75,14.691,32.75,32.75 s-14.691,32.75-32.75,32.75c-18.059,0-32.75-14.691-32.75-32.75S137.313,42.623,155.372,42.623z M77.622,60.372 c8.271,0,15,6.73,15,15.001c0,8.271-6.729,14.999-15,14.999s-15-6.729-15-14.999C62.622,67.102,69.351,60.372,77.622,60.372z"></path> <path id="XMLID_440_" d="M233.122,150.372c-19.643,0-38.329,7.388-52.584,20.532c-8.103-1.816-16.523-2.781-25.166-2.781 c-8.643,0-17.063,0.965-25.165,2.781c-14.255-13.144-32.942-20.532-52.585-20.532C34.821,150.372,0,185.194,0,227.995 c0,8.284,6.716,15,15,15h32.6c-4.669,12.5-7.228,26.019-7.228,40.127c0,8.284,6.716,15,15,15h200c8.284,0,15-6.716,15-15 c0-14.108-2.559-27.627-7.229-40.127h32.602c8.284,0,15-6.716,15-15C310.745,185.194,275.923,150.372,233.122,150.372z M32.42,212.995c6.298-18.934,24.181-32.623,45.202-32.623c6.617,0,13.052,1.382,18.964,3.95 c-12.484,7.456-23.443,17.209-32.29,28.673H32.42z M71.697,268.122c7.106-39.739,41.923-69.999,83.675-69.999 c41.751,0,76.569,30.26,83.675,69.999H71.697z M246.449,212.995c-8.848-11.464-19.806-21.217-32.29-28.673 c5.912-2.567,12.347-3.95,18.964-3.95c21.021,0,38.905,13.689,45.203,32.623H246.449z"></path> </g> </g></svg>
+            <h1>650 participants</h1>
+            <div class="text">
+            <p>Quisque ut liberto sapien. integer tellus nisl, efficitur sed dolor at, vehicula finibus massa.send tincidunt metus sed eleifend suscipit</p>
+            </div>
+            </div>
+            <div class="textbox">
+            <svg viewBox="0 0 24 24" fill="none" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7V12H9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#fd0808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            <h1>24 programs</h1>
+            <div class="text1">
+            <p>Quisque ut liberto sapien. integer tellus nisl, efficitur sed dolor at, vehicula finibus massa.send tincidunt metus sed eleifend suscipit</p>
+            </div>
+            </div>
+            <div class="textbox">
+            <svg viewBox="-4 0 24 24" id="meteor-icon-kit__solid-microphone" fill="none" height="50px" width="50px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C5.23858 0 3 2.23858 3 5V13C3 15.7614 5.23858 18 8 18C10.7614 18 13 15.7614 13 13V5C13 2.23858 10.7614 0 8 0z" fill="#f60428"></path><path d="M2 11.5882C2 11.0359 1.55228 10.5882 1 10.5882C0.44772 10.5882 0 11.0359 0 11.5882V13.647C0 17.4729 3.12354 20.4939 7 20.9425V22H5C4.44772 22 4 22.4477 4 23C4 23.5523 4.44772 24 5 24H11C11.5523 24 12 23.5523 12 23C12 22.4477 11.5523 22 11 22H9V20.9425C12.8765 20.4939 16 17.4729 16 13.647V11.5882C16 11.0359 15.5523 10.5882 15 10.5882C14.4477 10.5882 14 11.0359 14 11.5882V13.647C14 16.5143 11.4072 19 8 19C4.59282 19 2 16.5143 2 13.647V11.5882z" fill="#f60428"></path></g></svg>
+            <h1>11 speakers</h1>
+            <div class="text2">
+            <p>Quisque ut liberto sapien. integer tellus nisl, efficitur sed dolor at, vehicula finibus massa.send tincidunt metus sed eleifend suscipit</p>
+            </div>
+            </div>
+            </div>
+            <div class="mainbox">
+            <div class="body">
+            <h3>watch video</h3>
+            <div class="para1">
+            <p><b>Quisque ut liberto sapien. integer tellus nisl, efficitur sed dolor at, vehicula finibus massa.send tincidunt metus sed eleifend suscipit</b></p>
+            <div class="para2">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinicidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy</p>
+              </div> 
+              </div>
+              </div>
+              <div class="image">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/XDPwXQjAlB0?si=nUZlnEatigYUALyd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>  
+              </div> 
+              <div class="name">
+              <div class="pic">
+                <h2>CREATIVE SPEAKERS</h2>
+                <div class="man">
+                <p>Lorem ipsum dolor sit amet,maecenas eget vestibulum justo imperdiet</p>
+                </div>
+              <div class="pics">
+                <div class="picture">
+                  <img src="./assets/imges/speakers-img1 (1).jpg" height="200px" width="200px">
+                <div class="head">
+                <p><b>Jenny green</b></p>
+                  <p>UI designer</p>
+                </div> 
+                </div>          
+                <div class="picture">
+                  <img src="./assets/imges/speakers-img2.jpg" height="200Px" width="200Px">
+                  <div class="head">
+                    <p><b>David yoon</b></p>
+                      <p>Creative direct</p>
+                    </div> 
+                    </div>    
+                <div class="picture">
+                  <img src="./assets/imges/speakers-img3.jpg" height="200Px" width="200Px">
+                  <div class="head">
+                    <p><b>Je Mary Lee</b></p>
+                      <p>Web specialist</p>
+                </div>
+                </div>
+                <div class="picture">
+                  <img src="./assets/imges/speakers-img4.jpg" height="200Px" width="200Px">
+                  <div class="head">
+                    <p><b>Johnathan Doe</b></p>
+                    <p>Frontend Dev</p>
+                </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="prgm">
+              <h2><b>OUR PROGRAMS</b></h2>
+                <div class="value">
+                Quisque ut liberto sapien. integer tellus nisl, efficitur sed dolor at, vehicula finibus massa.send tincidunt metus sed eleifend suscipit
+                </div>
+               <div class="variable">
+                <div class="day1">
+                FIRST DAY
+                </div>
+                <div class="day2">
+                SECOND DAY
+                </div>
+                <div class="day3">
+                THIRD DAY
+                </div>
+              </div>
+              </div>
+              <div class="design">
+                <div class="build">
+                <div class="build-img1">
+              <img src="./assets/imges/program-img1.jpg"height="150px" width="150px"></div>
+              <div class="content">
+              <div class="com">
+              <!-- <svg fill="#f50505" height="15px" width="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310.75 310.75" xml:space="preserve" stroke="#f50505" stroke-width="0.0031074500000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_341_"> <path id="XMLID_348_" d="M77.622,120.372c9.942,0,19.137-3.247,26.593-8.728c11.382,16.007,30.063,26.479,51.157,26.479 c21.093,0,39.774-10.472,51.157-26.479c7.456,5.481,16.651,8.728,26.593,8.728c24.813,0,45-20.187,45-44.999 c0-24.814-20.187-45.001-45-45.001c-9.943,0-19.138,3.248-26.594,8.729c-11.383-16.006-30.063-26.478-51.156-26.478 c-21.093,0-39.773,10.472-51.156,26.478c-7.456-5.481-16.651-8.729-26.594-8.729c-24.813,0-45,20.187-45,45.001 C32.622,100.186,52.809,120.372,77.622,120.372z M233.122,60.372c8.271,0,15,6.73,15,15.001c0,8.271-6.729,14.999-15,14.999 c-8.271,0-15-6.729-15-14.999C218.122,67.102,224.851,60.372,233.122,60.372z M155.372,42.623c18.059,0,32.75,14.691,32.75,32.75 s-14.691,32.75-32.75,32.75c-18.059,0-32.75-14.691-32.75-32.75S137.313,42.623,155.372,42.623z M77.622,60.372 c8.271,0,15,6.73,15,15.001c0,8.271-6.729,14.999-15,14.999s-15-6.729-15-14.999C62.622,67.102,69.351,60.372,77.622,60.372z"></path> <path id="XMLID_440_" d="M233.122,150.372c-19.643,0-38.329,7.388-52.584,20.532c-8.103-1.816-16.523-2.781-25.166-2.781 c-8.643,0-17.063,0.965-25.165,2.781c-14.255-13.144-32.942-20.532-52.585-20.532C34.821,150.372,0,185.194,0,227.995 c0,8.284,6.716,15,15,15h32.6c-4.669,12.5-7.228,26.019-7.228,40.127c0,8.284,6.716,15,15,15h200c8.284,0,15-6.716,15-15 c0-14.108-2.559-27.627-7.229-40.127h32.602c8.284,0,15-6.716,15-15C310.745,185.194,275.923,150.372,233.122,150.372z M32.42,212.995c6.298-18.934,24.181-32.623,45.202-32.623c6.617,0,13.052,1.382,18.964,3.95 c-12.484,7.456-23.443,17.209-32.29,28.673H32.42z M71.697,268.122c7.106-39.739,41.923-69.999,83.675-69.999 c41.751,0,76.569,30.26,83.675,69.999H71.697z M246.449,212.995c-8.848-11.464-19.806-21.217-32.29-28.673 c5.912-2.567,12.347-3.95,18.964-3.95c21.021,0,38.905,13.689,45.203,32.623H246.449z"></path> </g> </g></svg>   -->
+              <svg viewBox="0 0 24 24" fill="none" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7V12L9.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              09.00 AM
+              <svg version="1.0" id="Layer_1" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#231F20" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path> </g></svg>
+              Room 240
+              <h3>Introduction to Design</h3>
+              <!-- </div> -->
+              <p>By Jenny Green</p>
+              <p>Quisque facilisis scelerisque venenatis.Nam vulputate ultricies luctus. Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed diam nonummy nibhe ismod tincidunt ut laoreet</p>
+              </div>
+              </div>
+              </div>
+              <div class="build">
+                <div class="build-img1">
+              <img src="./assets/imges/program-img2 (2).jpg" height="150px" width="150px"></div>
+              <div class="content">
+              <div class="com">
+              <svg viewBox="0 0 24 24" fill="none" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7V12L9.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              10.00 AM
+              <svg version="1.0" id="Layer_1" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#231F20" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path> </g></svg>
+              Room 360
+              <h3>Front-End Development</h3>
+              </div>
+              <p>By Johnathan Mark</p>
+              <p>Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. praesent ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis</p>
+              </div>
+              </div>
+              <div class="build">
+                <div class="build-img1">
+                <img src="./assets/imges/program-img3.jpg" height="150px" width="150px"></div>
+                <div class="content">
+                <div class="com">
+                <svg viewBox="0 0 24 24" fill="none" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7V12L9.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <!-- <svg viewBox="0 0 24 24" fill="none" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7V12L9.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg> -->
+                 11.00 AM
+                 <svg version="1.0" id="Layer_1" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#231F20" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path> </g></svg>
+                 Room 450
+                <h3>Social Media Marketing</h3>
+                </div>
+                <p>By Johnathan Doe</p>
+                <p>Nam pulvinar, elit vitae pretium, massa urna bibendum ex, aliquam efficitur lorem odio vitae erat. integer rutrum viverra magna, nec ultrices risus rutrum nec.</p>
+               </div>
+               </div>
+               </div>
+               <div class="tap">
+                <div class="tit">
+                <h3>REGISTER HERE</h3>
+                <div class="tat">
+                <p><b>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendriet.</b></p>
+                <div class="int">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinicidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy</p>
+                </div> 
+                </div>
+                </div>
+                <div class="md">
+                <form>
+                <input type="text" placeholder="First Name" id="First Name" name="First Name"/>
+                <div class="char">
+                <br><input type="text" placeholder="Last Name" id="Last Name" name="Last Name"/>
+                </div>
+                <div class="char">
+                <br><input type="text" placeholder="Phone Number" id="Phone Number" name="Phone Number"/>
+                </div>
+                <div class="char">
+                <br><input type="Email " placeholder="Email Number" id="Email Address" name="Email Address"/>
+                </div>
+                <div class="rem1">
+                <br><button class="rem">Register</button>
+                </div>
+                </form>
+                </div>
+                </div>
+                <div class="radio">
+                <div class="hang">
+                <h2>DO YOU HAVE QUESTIONS?</h2>
+                <div class="floor">
+                <p>Lorem ipsum dolor sit amet,maecenas eget vestibulum justo imperdiet</p>
+                </div>
+                </div>
+                </div>
+                <!-- <div class="top"> -->
+                  <div class="single">
+                  <h3>What is Responsive Design?
+                  </div>
+                  <!-- </div> -->
+                  <div class="double">
+                  <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque,curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet<br><br>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendreit. Mauris justo erat, rhoncus in arcu at, scelerisque tempor erat.</p>
+                  </div>
+                  <div class="cm">
+                  </div>
+                  <div class="triple">
+                  <h3>What are latest UX Developments?</h3>
+                  </div>
+                  <div class="dm">
+                  </div>
+                  <div class="twice">
+                  <h3>What things about Social Media will be Discussed?
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="flip">
+                  <div class="flip1">
+                  <h3>VENUE</h3>
+                  <div class="flip2">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinicidunt ut laoreet. Dolore magna aliquam erat volutpat.<br></p>
+                  <div class="flip3">
+                  <p><b><br>New Event<br><br>120 Market Street, Suite 110<br><br>San Francisco, CA 10110<br><br>Tel: 010-020-0120</b></p>
+                  </div> 
+                  <!-- </div>
+                  </div> -->
+                  </div>
+                  
+                
+
+                 
+                
+                
+                
+
+              
+              
+              
+              
+              
+
+              
+              
+                
+              
+              
+                
+
+                
+                
+                
+                
+              
+              
+              
+            
+            
+          
+          
+          
+          
+          
+</body>
+</html>
